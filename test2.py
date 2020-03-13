@@ -1,7 +1,8 @@
 '''计算器'''
 import re
 import sys
-
+import re
+import sys
 
 class Calculator(object):
     '''计算器所用函数'''
