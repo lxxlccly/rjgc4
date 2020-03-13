@@ -64,6 +64,9 @@ class Calculator(object):
         else:
             print('计算结果为 %.10g' % float(answer1))
 
+    def print_print(self):
+        print("哈哈哈")
+
 
 if __name__ == '__main__':
     ARGS = ' '.join(sys.argv[1:])
