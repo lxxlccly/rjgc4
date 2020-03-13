@@ -65,6 +65,7 @@ class Calculator(object):
 
     def print_print(self):
         print("哈哈哈")
+        print("嘻嘻嘻")
 
 
 if __name__ == '__main__':
