@@ -51,7 +51,8 @@ class PoetGame(object):
         random_poet = random.randint(0, len(all_poet) - 1)
         sentence_amount = len(all_poet[random_poet]['paragraphs'])
         random_sentence = random.randint(0, sentence_amount - 1)
-        sentences = re.findall(r'[\u4E00-\u9FA5]+', all_poet[random_poet]['paragraphs'][random_sentence])
+        sentences = re.findall(r'[\u4E00-\u9FA5]+',
+                               all_poet[random_poet]['paragraphs'][random_sentence])
         random_sentence = random.randint(0, len(sentences) - 1)
         sentence = sentences[random_sentence]
         sentence = langconv.Converter('zh-hans').convert(sentence)
@@ -82,7 +83,7 @@ class PoetGame(object):
             head = random.randint(0xb0, 0xf7)
             body = random.randint(0xa1, 0xfe)
             val = f'{head:x} {body:x}'
-            word = bytes.fromhex(val).decode('gb2312')
+            word = bytes.fromhex(val).decode('gb2312', errors='ignore') #或者用decode('gbk')
             self.questions[number].append(word)
 
     def get_question(self, number):
@@ -97,7 +98,7 @@ class PoetGame(object):
         '''打印成绩'''
         print('总结：')
         for i in range(len(self.right_answer)):
-            print('{0:>2}、您的回答：{1}，正确答案：{2}'.format(i + 1, self.answers[i], self.right_answer[i]))
+            print('{0:>2}、您的回答：{1}；正确答案：{2}'.format(i + 1, self.answers[i], self.right_answer[i]))
         print('您的总得分为：%s分' % str(self.grade))
 
 
