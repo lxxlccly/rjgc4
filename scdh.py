@@ -40,8 +40,24 @@ class PoetGame(object):
             self.answers.append(answer)
 
     def get_sentence(self):
-        '''获得一个诗句'''
-        #从唐诗三百首里随机获取题目
+        '''获得一个诗句
+
+        #从58000首诗里随机获取题目的代码
+        random_poet = random.randint(0, 57999)
+        address = './poet/poet.song.' + str(int(random_poet // 1000 * 1000)) + '.json'
+        with open(address, 'r', encoding='utf-8') as load_f:
+            load_dict = json.load(load_f)
+            sentence_amount = len(load_dict[int(random_poet % 1000)]['paragraphs'])
+            random_sentence = random.randint(0, sentence_amount - 1)
+            sentences = re.findall(r'[\u4E00-\u9FA5]+',
+                                  load_dict[int(random_poet % 1000)]['paragraphs'][random_sentence])
+            random_sentence = random.randint(0, len(sentences) - 1)
+            sentence = sentences[random_sentence]
+        self.right_answer.append(sentence)
+        words = re.findall(r'[\u4E00-\u9FA5]', sentence)
+        self.questions.append(words)
+        '''
+        #从唐诗三百首里随机获取题目的代码
         address = './poet/tangshisanbaishou.json'
         with open(address, 'r', encoding='utf-8') as load_f:
             load_dict = json.load(load_f)
@@ -59,32 +75,18 @@ class PoetGame(object):
         self.right_answer.append(sentence)
         words = re.findall(r'[\u4E00-\u9FA5]', sentence)
         self.questions.append(words)
-        '''
-        #从58000首诗里随机获取题目
-        random_poet = random.randint(0, 57999)
-        address = './poet/poet.song.' + str(int(random_poet // 1000 * 1000)) + '.json'
-        with open(address, 'r', encoding='utf-8') as load_f:
-            load_dict = json.load(load_f)
-            sentence_amount = len(load_dict[int(random_poet % 1000)]['paragraphs'])
-            random_sentence = random.randint(0, sentence_amount - 1)
-            sentences = re.findall(r'[\u4E00-\u9FA5]+',
-                                  load_dict[int(random_poet % 1000)]['paragraphs'][random_sentence])
-            random_sentence = random.randint(0, len(sentences) - 1)
-            sentence = sentences[random_sentence]
-        self.right_answer.append(sentence)
-        words = re.findall(r'[\u4E00-\u9FA5]', sentence)
-        self.questions.append(words)
-        '''
 
     def get_disturb(self, number, len_sentence):
         '''获得对诗句进行干扰的汉字'''
         len_disturb = 12 - len_sentence
-        for i in range(len_disturb):
+        i = 0
+        while i < len_disturb:
             head = random.randint(0xb0, 0xf7)
             body = random.randint(0xa1, 0xfe)
             val = f'{head:x} {body:x}'
             word = bytes.fromhex(val).decode('gb2312', errors='ignore') #或者用decode('gbk')
             self.questions[number].append(word)
+            i += 1
 
     def get_question(self, number):
         '''获得题目'''
@@ -98,7 +100,12 @@ class PoetGame(object):
         '''打印成绩'''
         print('总结：')
         for i in range(len(self.right_answer)):
-            print('{0:>2}、您的回答：{1}；正确答案：{2}'.format(i + 1, self.answers[i], self.right_answer[i]))
+            if self.answers[i] == self.right_answer[i]:
+                print('{0:>2}、回答正确。您的回答：{1}；正确答案：{2}'
+                      .format(i + 1, self.answers[i], self.right_answer[i]))
+            else:
+                print('{0:>2}、回答错误。您的回答：{1}；正确答案：{2}'
+                      .format(i + 1, self.answers[i], self.right_answer[i]))
         print('您的总得分为：%s分' % str(self.grade))
 
 

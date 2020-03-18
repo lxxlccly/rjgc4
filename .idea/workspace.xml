@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scdh.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+            <state relative-caret-position="132">
+              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
               <folding>
                 <element signature="e#54#63#0" expanded="true" />
               </folding>
@@ -71,11 +71,6 @@
             <path>
               <item name="rjgc4" type="b2602c69:ProjectViewProjectNode" />
               <item name="rjgc4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rjgc4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rjgc4" type="462c0819:PsiDirectoryNode" />
-              <item name="poet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -304,7 +299,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584495819852</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="从唐诗三百首里获取题目，繁体字变简体字">
+      <created>1584501090931</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1584501090931</updated>
+    </task>
+    <task id="LOCAL-00013" summary="解决了偶尔遇到的随机汉字生成器编码错误">
+      <created>1584502190474</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584502190474</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -316,7 +325,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32982457" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48596492" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -348,7 +357,9 @@
     <MESSAGE value="写了基本框架，定时器以及诗词读取工作" />
     <MESSAGE value="生成题目，打印正确答案" />
     <MESSAGE value="回答及计分" />
-    <option name="LAST_COMMIT_MESSAGE" value="回答及计分" />
+    <MESSAGE value="从唐诗三百首里获取题目，繁体字变简体字" />
+    <MESSAGE value="解决了偶尔遇到的随机汉字生成器编码错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决了偶尔遇到的随机汉字生成器编码错误" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.py">
@@ -435,8 +446,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scdh.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+        <state relative-caret-position="132">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
           <folding>
             <element signature="e#54#63#0" expanded="true" />
           </folding>
