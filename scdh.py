@@ -12,21 +12,30 @@ class PoetGame(object):
     def __init__(self):
         self.question_amount = 10
         self.right_answer = []
+        self.answers = []
         self.grade = 0
         self.questions = []
 
     def start(self):
         '''开始游戏'''
         for i in range(self.question_amount):
+            print('当前得分：%u' % self.grade)
             self.get_question(i)
             self.answer_question()
-            print('正确答案为：' + self.right_answer[i])
+            if self.answers[i] == self.right_answer[i]:
+                print('回答正确')
+                self.grade += 100/self.question_amount
+            else:
+                print('回答错误，正确答案为：' + self.right_answer[i])
+        self.print_grade()
 
     def answer_question(self):
         '''回答问题'''
         eventlet.monkey_patch()
+        print('请输入答案：')
         with eventlet.Timeout(3, False):
-            print('hhh')
+            answer = input()
+            self.answers.append(answer)
 
     def get_sentence(self):
         '''获得一个诗句'''
@@ -48,8 +57,11 @@ class PoetGame(object):
         '''获得对诗句进行干扰的汉字'''
         len_disturb = 12 - len_sentence
         for i in range(len_disturb):
-            word = random.randint(0x4e00, 0x9fbf)
-            self.questions[number].append(chr(word))
+            head = random.randint(0xb0, 0xf7)
+            body = random.randint(0xa1, 0xfe)
+            val = f'{head:x} {body:x}'
+            word = bytes.fromhex(val).decode('gb2312')
+            self.questions[number].append(word)
 
     def get_question(self, number):
         '''获得题目'''
@@ -61,7 +73,10 @@ class PoetGame(object):
 
     def print_grade(self):
         '''打印成绩'''
-        print(self.grade)
+        print('总结：')
+        for i in range(len(self.right_answer)):
+            print('{0:>2}、您的回答：{1}，正确答案：{2}'.format(i + 1, self.answers[i], self.right_answer[i]))
+        print('您的总得分为：%s分' % str(self.grade))
 
 
 if __name__ == '__main__':
