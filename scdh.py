@@ -4,9 +4,12 @@
 
 import re
 import json
+import time
 import random
-import eventlet
 import langconv
+import time_limit
+
+LIMIT_TIME = 10
 
 
 class PoetGame(object):
@@ -23,7 +26,13 @@ class PoetGame(object):
         for i in range(self.question_amount):
             print('当前得分：%u' % self.grade)
             self.get_question(i)
-            self.answer_question()
+            a_threading = time_limit.MyThread(target=self.answer_question)
+            a_threading.start()
+            #time.sleep(LIMIT_TIME) 这两句做界面的时候用
+            #a_threading.stop()
+            a_threading.join()
+            if a_threading.get_result() == 0:
+                self.answers.append('')
             if self.answers[i] == self.right_answer[i]:
                 print('回答正确')
                 self.grade += 100/self.question_amount
@@ -31,13 +40,13 @@ class PoetGame(object):
                 print('回答错误，正确答案为：' + self.right_answer[i])
         self.print_grade()
 
+    @time_limit.limit_decor(LIMIT_TIME)  # 超时设置(s)
     def answer_question(self):
         '''回答问题'''
-        eventlet.monkey_patch()
         print('请输入答案：')
-        with eventlet.Timeout(3, False):
-            answer = input()
-            self.answers.append(answer)
+        answer = input()
+        self.answers.append(answer)
+        return 1
 
     def get_sentence(self):
         '''获得一个诗句
@@ -69,7 +78,10 @@ class PoetGame(object):
         random_sentence = random.randint(0, sentence_amount - 1)
         sentences = re.findall(r'[\u4E00-\u9FA5]+',
                                all_poet[random_poet]['paragraphs'][random_sentence])
-        random_sentence = random.randint(0, len(sentences) - 1)
+        if len(sentences) == 0:
+            random_sentence = 0
+        else:
+            random_sentence = random.randint(0, len(sentences) - 1)
         sentence = sentences[random_sentence]
         sentence = langconv.Converter('zh-hans').convert(sentence)
         self.right_answer.append(sentence)
