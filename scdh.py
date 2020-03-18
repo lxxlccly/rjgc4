@@ -4,11 +4,13 @@
 
 import re
 import json
-import eventlet
 import random
+import eventlet
+import langconv
 
 
 class PoetGame(object):
+    '''诗词大赛函数'''
     def __init__(self):
         self.question_amount = 10
         self.right_answer = []
@@ -39,6 +41,25 @@ class PoetGame(object):
 
     def get_sentence(self):
         '''获得一个诗句'''
+        #从唐诗三百首里随机获取题目
+        address = './poet/tangshisanbaishou.json'
+        with open(address, 'r', encoding='utf-8') as load_f:
+            load_dict = json.load(load_f)
+            all_poet = []
+            for i in range(len(load_dict['content'])):
+                all_poet = all_poet + load_dict['content'][i]['content']
+        random_poet = random.randint(0, len(all_poet) - 1)
+        sentence_amount = len(all_poet[random_poet]['paragraphs'])
+        random_sentence = random.randint(0, sentence_amount - 1)
+        sentences = re.findall(r'[\u4E00-\u9FA5]+', all_poet[random_poet]['paragraphs'][random_sentence])
+        random_sentence = random.randint(0, len(sentences) - 1)
+        sentence = sentences[random_sentence]
+        sentence = langconv.Converter('zh-hans').convert(sentence)
+        self.right_answer.append(sentence)
+        words = re.findall(r'[\u4E00-\u9FA5]', sentence)
+        self.questions.append(words)
+        '''
+        #从58000首诗里随机获取题目
         random_poet = random.randint(0, 57999)
         address = './poet/poet.song.' + str(int(random_poet // 1000 * 1000)) + '.json'
         with open(address, 'r', encoding='utf-8') as load_f:
@@ -52,6 +73,7 @@ class PoetGame(object):
         self.right_answer.append(sentence)
         words = re.findall(r'[\u4E00-\u9FA5]', sentence)
         self.questions.append(words)
+        '''
 
     def get_disturb(self, number, len_sentence):
         '''获得对诗句进行干扰的汉字'''
@@ -82,4 +104,3 @@ class PoetGame(object):
 if __name__ == '__main__':
     game = PoetGame()
     game.start()
-
