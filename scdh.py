@@ -9,7 +9,7 @@ import random
 import langconv
 import time_limit
 
-LIMIT_TIME = 10
+LIMIT_TIME = 60
 
 
 class PoetGame(object):
