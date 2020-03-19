@@ -103,6 +103,7 @@ class PoetGame(object):
     def get_question(self, number):
         '''获得题目'''
         print('第%u题：' % int(number + 1))
+        print('请从以下十二个字中拼凑出一句诗：')
         self.get_sentence()
         self.get_disturb(number, len(self.right_answer[number]))
         random.shuffle(self.questions[number])
