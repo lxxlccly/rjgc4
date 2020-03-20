@@ -20,6 +20,7 @@ class PoetGame(object):
         self.answers = []
         self.grade = 0
         self.questions = []
+        self.poet_number = []
 
     def start(self):
         '''开始游戏'''
@@ -52,7 +53,12 @@ class PoetGame(object):
         '''获得一个诗句
 
         #从58000首诗里随机获取题目的代码
-        random_poet = random.randint(0, 57999)
+        while 1:
+            random_poet0 =  random.randint(0, 57999)
+            if random_poet0 not in self.poet_number:
+                self.poet_number.append(random_poet0)
+                break
+        random_poet = self.poet_number[len(self.poet_number) - 1]
         address = './poet/poet.song.' + str(int(random_poet // 1000 * 1000)) + '.json'
         with open(address, 'r', encoding='utf-8') as load_f:
             load_dict = json.load(load_f)
@@ -73,11 +79,15 @@ class PoetGame(object):
             all_poet = []
             for i in range(len(load_dict['content'])):
                 all_poet = all_poet + load_dict['content'][i]['content']
-        random_poet = random.randint(0, len(all_poet) - 1)
+        while 1:
+            random_poet = random.randint(0, len(all_poet) - 1)
+            if random_poet not in self.poet_number:
+                self.poet_number.append(random_poet)
+                break
         sentence_amount = len(all_poet[random_poet]['paragraphs'])
         random_sentence = random.randint(0, sentence_amount - 1)
         sentences = re.findall(r'[\u4E00-\u9FA5]+',
-                               all_poet[random_poet]['paragraphs'][random_sentence])
+                               all_poet[self.poet_number[len(self.poet_number) - 1]]['paragraphs'][random_sentence])
         if len(sentences) == 0:
             random_sentence = 0
         else:
