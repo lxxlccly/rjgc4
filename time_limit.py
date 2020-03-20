@@ -1,9 +1,10 @@
-'''来源于https://www.cnblogs.com/lyxdw/p/10033118.html'''
+'''来源于https://www.cnblogs.com/lyxdw/p/10033118.html，修改了部分内容'''
 import time
 import threading
 
 
 class MyThread(threading.Thread):
+    '''线程类'''
     def __init__(self, target, args=()):
         super(MyThread, self).__init__()
         self.func = target
@@ -21,10 +22,11 @@ class MyThread(threading.Thread):
             i += 1
 
     def stop(self):
+        '''停止线程'''
         self.running = False
 
     def get_result(self):
-        # 线程不结束,返回值为None
+        '''线程不结束,返回值为None'''
         try:
             return self.result
         except Exception:
