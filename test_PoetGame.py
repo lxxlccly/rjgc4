@@ -2,7 +2,7 @@
 from unittest import TestCase, mock
 from scdh import PoetGame
 import langconv
-from itertools import chain, cycle
+from itertools import chai
 
 
 class TestPoetGame(TestCase):
