@@ -47,10 +47,10 @@ def limit_decor(limit_time):
             thre_func.setDaemon(True)
             thre_func.start()
             # 计算分段沉睡次数
-            sleep_num = int(limit_time // 1)
+            sleep_num = int(limit_time // 0.1)
             # 多次短暂沉睡并尝试获取返回值
             for i in range(sleep_num):
-                time.sleep(1)
+                time.sleep(0.1)
                 infor = thre_func.get_result()
                 if infor:
                     return 1
