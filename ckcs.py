@@ -30,6 +30,7 @@ class PoetGame(object):
 
     @time_limit.limit_decor(LIMIT_TIME)  # 超时设置(s)
     def cycle(self):
+        '''回答（循环）'''
         answer_unfinished = 1
         while answer_unfinished:
             for i in range(self.question_amount):
@@ -62,8 +63,8 @@ class PoetGame(object):
     def get_question(self):
         '''获得题目'''
         all_question = []
-        with open('./poet/question.txt', encoding="utf-8") as f:
-            for row in f:
+        with open('./poet/question.txt', encoding="utf-8") as load_question:
+            for row in load_question:
                 word = row.replace('\n', '').replace('\r', '')
                 all_question.append(word)
         while 1:
@@ -89,12 +90,11 @@ class PoetGame(object):
                 right_amounts += 1
             else:
                 print('{0:>2}、回答错误/未回答。'.format(i + 1))
-        self.grade = right_amounts / self.question_amount
-        print('您的总得分为：%s分' % str(self.grade))
+        self.grade = right_amounts / self.question_amount * 100
+        print('您的总得分为：%.1f分' % self.grade)
 
 
 if __name__ == '__main__':
     game = PoetGame()
     game.start()
     game.print_grade()
-

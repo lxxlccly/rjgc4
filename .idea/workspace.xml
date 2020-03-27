@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="002c76d7-07c2-4167-9a57-07014f50339c" name="Default Changelist" comment="bug">
+    <list default="true" id="002c76d7-07c2-4167-9a57-07014f50339c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ckcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/ckcs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poet/tssbs.json" beforeDir="false" afterPath="$PROJECT_DIR$/poet/tssbs.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ckcs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+            <state relative-caret-position="241">
+              <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
               <folding>
                 <element signature="e#54#63#0" expanded="true" />
               </folding>
@@ -44,6 +43,9 @@
       <find>相思</find>
       <find>寒山</find>
       <find>洛阳</find>
+      <find>两岸</find>
+      <find>夫婿</find>
+      <find>慈母</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -68,9 +70,9 @@
         <option value="$PROJECT_DIR$/ee.py" />
         <option value="$PROJECT_DIR$/scdh.py" />
         <option value="$PROJECT_DIR$/time_limit.py" />
-        <option value="$PROJECT_DIR$/poet/tssbs.json" />
         <option value="$PROJECT_DIR$/assist.py" />
         <option value="$PROJECT_DIR$/poet/question.json.py" />
+        <option value="$PROJECT_DIR$/poet/tssbs.json" />
         <option value="$PROJECT_DIR$/ckcs.py" />
       </list>
     </option>
@@ -93,11 +95,6 @@
             <path>
               <item name="rjgc4" type="b2602c69:ProjectViewProjectNode" />
               <item name="rjgc4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rjgc4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rjgc4" type="462c0819:PsiDirectoryNode" />
-              <item name="poet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -387,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585131829355</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="修改了题目生成函数和回答验证">
+      <created>1585191831950</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1585191831950</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -399,7 +403,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25263157" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22807017" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -456,7 +460,8 @@
     <MESSAGE value="不能重复产生某句诗" />
     <MESSAGE value="注释" />
     <MESSAGE value="出口成诗所有函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="出口成诗所有函数" />
+    <MESSAGE value="修改了题目生成函数和回答验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了题目生成函数和回答验证" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.py" />
@@ -567,15 +572,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/poet/tssbs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="788" column="28" lean-forward="true" selection-start-line="788" selection-start-column="28" selection-end-line="788" selection-end-column="28" />
+        <state relative-caret-position="197">
+          <caret line="3356" column="27" lean-forward="true" selection-start-line="3356" selection-start-column="27" selection-end-line="3356" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ckcs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+        <state relative-caret-position="241">
+          <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
           <folding>
             <element signature="e#54#63#0" expanded="true" />
           </folding>
