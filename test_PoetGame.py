@@ -1,4 +1,4 @@
-'''PoetGame的测试函数'''
+'''点字成诗PoetGame的测试函数'''
 from unittest import TestCase, mock
 from dzcs import PoetGame
 import langconv
