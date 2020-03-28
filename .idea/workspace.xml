@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="002c76d7-07c2-4167-9a57-07014f50339c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/ckcs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scdh.py" beforeDir="false" afterPath="$PROJECT_DIR$/dzcs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_PoetGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_PoetGame.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,13 +14,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ckcs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+            <state relative-caret-position="868">
+              <caret line="86" column="45" lean-forward="true" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
               <folding>
                 <element signature="e#54#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dzcs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+              <folding>
+                <element signature="e#54#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_PoetGame.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+              <folding>
+                <element signature="e#20#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,12 +93,14 @@
         <option value="$PROJECT_DIR$/hh.py" />
         <option value="$PROJECT_DIR$/scdh1.py" />
         <option value="$PROJECT_DIR$/ee.py" />
-        <option value="$PROJECT_DIR$/scdh.py" />
         <option value="$PROJECT_DIR$/time_limit.py" />
         <option value="$PROJECT_DIR$/assist.py" />
         <option value="$PROJECT_DIR$/poet/question.json.py" />
         <option value="$PROJECT_DIR$/poet/tssbs.json" />
         <option value="$PROJECT_DIR$/ckcs.py" />
+        <option value="$PROJECT_DIR$/scdh.py" />
+        <option value="$PROJECT_DIR$/test_PoetGame.py" />
+        <option value="$PROJECT_DIR$/dzcs.py" />
       </list>
     </option>
   </component>
@@ -124,8 +151,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ckcs">
-    <configuration name="assist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.pytest for test_PoetGame.TestPoetGame">
+    <configuration name="dzcs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="rjgc4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,7 +164,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assist.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dzcs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,97 +173,73 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ckcs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest for test_PoetGame.TestPoetGame" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="rjgc4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ckcs.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_PoetGame.TestPoetGame&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="ee" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest for test_PoetGame.TestPoetGame.test_answer_question" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="rjgc4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ee.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_PoetGame.TestPoetGame.test_answer_question&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="scdh" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest for test_PoetGame.TestPoetGame.test_get_disturb" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="rjgc4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scdh.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_PoetGame.TestPoetGame.test_get_disturb&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="time_limit" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest for test_PoetGame.TestPoetGame.test_get_sentence" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="rjgc4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/time_limit.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_PoetGame.TestPoetGame.test_get_sentence&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ckcs" />
-        <item itemvalue="Python.assist" />
-        <item itemvalue="Python.scdh" />
-        <item itemvalue="Python.time_limit" />
-        <item itemvalue="Python.ee" />
+        <item itemvalue="Python tests.pytest for test_PoetGame.TestPoetGame" />
+        <item itemvalue="Python.dzcs" />
+        <item itemvalue="Python tests.pytest for test_PoetGame.TestPoetGame.test_get_disturb" />
+        <item itemvalue="Python tests.pytest for test_PoetGame.TestPoetGame.test_get_sentence" />
+        <item itemvalue="Python tests.pytest for test_PoetGame.TestPoetGame.test_answer_question" />
       </list>
     </recent_temporary>
   </component>
@@ -391,8 +394,47 @@
       <option name="project" value="LOCAL" />
       <updated>1585191831950</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="代码规范性检查">
+      <created>1585304038464</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585304038464</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_for_test_PoetGame_TestPoetGame_test_get_question - 2020.03.28 at 10h 31m 05s.xml">
+      <configuration name="pytest for test_PoetGame.TestPoetGame.test_get_question" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_PoetGame_TestPoetGame - 2020.03.28 at 10h 31m 11s.xml">
+      <configuration name="pytest for test_PoetGame.TestPoetGame" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_PoetGame_TestPoetGame_test_answer_question - 2020.03.28 at 10h 32m 12s.xml">
+      <configuration name="pytest for test_PoetGame.TestPoetGame.test_answer_question" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_PoetGame_TestPoetGame_test_get_sentence - 2020.03.28 at 10h 32m 16s.xml">
+      <configuration name="pytest for test_PoetGame.TestPoetGame.test_get_sentence" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_PoetGame_TestPoetGame_test_get_disturb - 2020.03.28 at 10h 32m 20s.xml">
+      <configuration name="pytest for test_PoetGame.TestPoetGame.test_get_disturb" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_PoetGame_TestPoetGame_test_get_disturb - 2020.03.28 at 10h 33m 30s.xml">
+      <configuration name="pytest for test_PoetGame.TestPoetGame.test_get_disturb" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_PoetGame_TestPoetGame_test_get_disturb - 2020.03.28 at 10h 38m 42s.xml">
+      <configuration name="pytest for test_PoetGame.TestPoetGame.test_get_disturb" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_PoetGame_TestPoetGame - 2020.03.28 at 10h 38m 48s.xml">
+      <configuration name="pytest for test_PoetGame.TestPoetGame" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_PoetGame_TestPoetGame - 2020.03.28 at 10h 40m 28s.xml">
+      <configuration name="pytest for test_PoetGame.TestPoetGame" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_PoetGame_TestPoetGame - 2020.03.28 at 10h 43m 21s.xml">
+      <configuration name="pytest for test_PoetGame.TestPoetGame" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="9" width="1346" height="688" extended-state="0" />
@@ -403,7 +445,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22807017" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43157893" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -453,7 +495,6 @@
     <MESSAGE value="回答及计分" />
     <MESSAGE value="从唐诗三百首里获取题目，繁体字变简体字" />
     <MESSAGE value="解决了偶尔遇到的随机汉字生成器编码错误" />
-    <MESSAGE value="代码规范性检查" />
     <MESSAGE value="添加了计时器" />
     <MESSAGE value="60秒" />
     <MESSAGE value="提示" />
@@ -461,7 +502,8 @@
     <MESSAGE value="注释" />
     <MESSAGE value="出口成诗所有函数" />
     <MESSAGE value="修改了题目生成函数和回答验证" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了题目生成函数和回答验证" />
+    <MESSAGE value="代码规范性检查" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码规范性检查" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.py" />
@@ -516,23 +558,6 @@
     <entry file="file://$PROJECT_DIR$/hh.py" />
     <entry file="file://$PROJECT_DIR$/scdh1.py" />
     <entry file="file://$PROJECT_DIR$/ee.py" />
-    <entry file="file://$PROJECT_DIR$/test_PoetGame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <element signature="e#20#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scdh.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/time_limit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -579,10 +604,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ckcs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+        <state relative-caret-position="868">
+          <caret line="86" column="45" lean-forward="true" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
           <folding>
             <element signature="e#54#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzcs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+          <folding>
+            <element signature="e#54#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_PoetGame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="e#20#55#0" expanded="true" />
           </folding>
         </state>
       </provider>

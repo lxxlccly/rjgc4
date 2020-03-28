@@ -1,19 +1,17 @@
-'''诗词大赛'''
+'''点字成诗'''
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
 import re
 import json
-import time
 import random
-import langconv
 import time_limit
 
 LIMIT_TIME = 60
 
 
 class PoetGame(object):
-    '''诗词大赛函数'''
+    '''点字成诗函数'''
     def __init__(self):
         self.question_amount = 10
         self.right_answer = []
@@ -21,6 +19,7 @@ class PoetGame(object):
         self.grade = 0
         self.questions = []
         self.poet_number = []
+        self.all_poet = []
 
     def start(self):
         '''开始游戏'''
@@ -29,8 +28,6 @@ class PoetGame(object):
             self.get_question(i)
             a_threading = time_limit.MyThread(target=self.answer_question)
             a_threading.start()
-            #time.sleep(LIMIT_TIME) 这两句做界面的时候用
-            #a_threading.stop()
             a_threading.join()
             if a_threading.get_result() == 0:
                 self.answers.append('')
@@ -72,35 +69,31 @@ class PoetGame(object):
         words = re.findall(r'[\u4E00-\u9FA5]', sentence)
         self.questions.append(words)
         '''
-        #从唐诗三百首里随机获取题目的代码
-        address = './poet/tangshisanbaishou.json'
+        address = './poet/tssbs.json' #从唐诗三百首里随机获取题目的代码
         with open(address, 'r', encoding='utf-8') as load_f:
-            load_dict = json.load(load_f)
-            all_poet = []
-            for i in range(len(load_dict['content'])):
-                all_poet = all_poet + load_dict['content'][i]['content']
+            self.all_poet = json.load(load_f)
         while 1:
-            random_poet = random.randint(0, len(all_poet) - 1)
+            random_poet = random.randint(0, len(self.all_poet) - 1)
             if random_poet not in self.poet_number:
                 self.poet_number.append(random_poet)
                 break
-        sentence_amount = len(all_poet[random_poet]['paragraphs'])
+        sentence_amount = len(self.all_poet[random_poet]['paragraphs'])
         random_sentence = random.randint(0, sentence_amount - 1)
         sentences = re.findall(r'[\u4E00-\u9FA5]+',
-                               all_poet[self.poet_number[len(self.poet_number) - 1]]['paragraphs'][random_sentence])
+                               self.all_poet[self.poet_number[len(self.poet_number) - 1]]['paragraphs'][random_sentence])
         if len(sentences) == 0:
             random_sentence = 0
         else:
             random_sentence = random.randint(0, len(sentences) - 1)
         sentence = sentences[random_sentence]
-        sentence = langconv.Converter('zh-hans').convert(sentence)
         self.right_answer.append(sentence)
         words = re.findall(r'[\u4E00-\u9FA5]', sentence)
         self.questions.append(words)
 
-    def get_disturb(self, number, len_sentence):
-        '''获得对诗句进行干扰的汉字'''
-        len_disturb = 12 - len_sentence
+    def get_disturb(self, number, len_question):
+        '''获得对诗句进行干扰的汉字
+
+        #随机汉字
         i = 0
         while i < len_disturb:
             head = random.randint(0xb0, 0xf7)
@@ -109,13 +102,35 @@ class PoetGame(object):
             word = bytes.fromhex(val).decode('gb2312', errors='ignore') #或者用decode('gbk')
             self.questions[number].append(word)
             i += 1
+        '''
+        len_disturb = 12 - len_question
+        while 1:
+            random_poet = random.randint(0, len(self.all_poet) - 1)
+            if random_poet not in self.poet_number:
+                sentence_amount = len(self.all_poet[random_poet]['paragraphs'])
+                if sentence_amount != 0:
+                    random_sentence = random.randint(0, sentence_amount - 1)
+                    sentences = re.findall(r'[\u4E00-\u9FA5]+', self.all_poet[random_poet]['paragraphs'][random_sentence])
+                    i = 0
+                    while len_disturb > 4:
+                        if sentences[0][i] not in self.questions[number]:
+                            self.questions[number].append(sentences[0][i])
+                            len_disturb -= 1
+                        i += 1
+                    i = 0
+                    while len_disturb > 0:
+                        if sentences[1][i] not in self.questions[number]:
+                            self.questions[number].append(sentences[1][i])
+                            len_disturb -= 1
+                        i += 1
+                    break
 
     def get_question(self, number):
         '''获得题目'''
         print('第%u题：' % int(number + 1))
         print('请从以下十二个字中拼凑出一句诗：')
         self.get_sentence()
-        self.get_disturb(number, len(self.right_answer[number]))
+        self.get_disturb(number, len(self.questions[number]))
         random.shuffle(self.questions[number])
         print(self.questions[number])
 

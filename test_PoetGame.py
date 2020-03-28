@@ -1,8 +1,9 @@
 '''PoetGame的测试函数'''
 from unittest import TestCase, mock
-from scdh import PoetGame
+from dzcs import PoetGame
 import langconv
-from itertools import chai
+from itertools import chain, cycle
+import json
 
 
 class TestPoetGame(TestCase):
@@ -28,6 +29,9 @@ class TestPoetGame(TestCase):
 
     def test_get_disturb(self):
         '''get_disturb的测试函数'''
+        address = './poet/tssbs.json'  # 从唐诗三百首里随机获取题目的代码
+        with open(address, 'r', encoding='utf-8') as load_f:
+            self.poet_game.all_poet = json.load(load_f)
         self.poet_game.questions.append([])
         self.poet_game.get_disturb(0, 7)
         self.assertEqual(5, len(self.poet_game.questions[0]), '字的数目不符')
