@@ -2,55 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="002c76d7-07c2-4167-9a57-07014f50339c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ckcs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-              <folding>
-                <element signature="e#54#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_ckcs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-209">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-              <folding>
-                <element signature="e#24#59#0" expanded="true" />
-                <element signature="e#96#107#0" />
-                <element signature="e#396#678#0" />
-                <element signature="e#1458#1566#0" />
-                <element signature="e#497#1248#0" />
-                <element signature="e#308#319#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_PoetGame.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,60 +35,15 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/testtwo.py" />
-        <option value="$PROJECT_DIR$/test2.py" />
-        <option value="$PROJECT_DIR$/window.py" />
-        <option value="$PROJECT_DIR$/window0.py" />
-        <option value="$PROJECT_DIR$/eee.py" />
-        <option value="$PROJECT_DIR$/poet/common_poet.py" />
-        <option value="$PROJECT_DIR$/poet/ee.py" />
-        <option value="$PROJECT_DIR$/poet/tangshisanbaishou.json" />
-        <option value="$PROJECT_DIR$/ww.py" />
-        <option value="$PROJECT_DIR$/hh.py" />
-        <option value="$PROJECT_DIR$/scdh1.py" />
-        <option value="$PROJECT_DIR$/ee.py" />
-        <option value="$PROJECT_DIR$/time_limit.py" />
-        <option value="$PROJECT_DIR$/assist.py" />
-        <option value="$PROJECT_DIR$/poet/question.json.py" />
-        <option value="$PROJECT_DIR$/poet/tssbs.json" />
-        <option value="$PROJECT_DIR$/scdh.py" />
-        <option value="$PROJECT_DIR$/dzcs.py" />
-        <option value="$PROJECT_DIR$/test_PoetGame.py" />
-        <option value="$PROJECT_DIR$/test_ckcs.py" />
-        <option value="$PROJECT_DIR$/ckcs.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="9" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="rjgc4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rjgc4" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1ZngIKKUijTD8ugkBJo558nNfMx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../rjgc2" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -140,32 +53,26 @@
       <recent name="E:\project\rjgc4" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python tests.pytest for test_ckcs.TestPoetGame.test_cycle">
-    <configuration name="pytest for test_ckcs.TestPoetGame" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.gui">
+    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="rjgc4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\python code\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_ckcs.TestPoetGame&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="pytest for test_ckcs.TestPoetGame.test_cycle" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -180,21 +87,6 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_ckcs.TestPoetGame.test_cycle&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_ckcs.TestPoetGame.test_get_question" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="rjgc4" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_ckcs.TestPoetGame.test_get_question&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -228,13 +120,28 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_ckcs.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="rjgc4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="D:\python code\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_ckcs.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.gui" />
+        <item itemvalue="Python tests.pytest in test_ckcs.py" />
         <item itemvalue="Python tests.pytest for test_ckcs.TestPoetGame.test_cycle" />
         <item itemvalue="Python tests.pytest for test_ckcs.TestPoetGame.test_start" />
         <item itemvalue="Python tests.pytest for test_dzcs.TestPoetGame.test_answer_question" />
-        <item itemvalue="Python tests.pytest for test_ckcs.TestPoetGame" />
-        <item itemvalue="Python tests.pytest for test_ckcs.TestPoetGame.test_get_question" />
       </list>
     </recent_temporary>
   </component>
@@ -413,61 +320,6 @@
     <option name="localTasksCounter" value="24" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="pytest_for_test_ckcs_TestPoetGame_test_cycle - 2020.03.28 at 12h 52m 57s.xml">
-      <configuration name="pytest for test_ckcs.TestPoetGame.test_cycle" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_ckcs_TestPoetGame_test_cycle - 2020.03.28 at 12h 54m 05s.xml">
-      <configuration name="pytest for test_ckcs.TestPoetGame.test_cycle" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_ckcs_TestPoetGame_test_start - 2020.03.28 at 12h 54m 32s.xml">
-      <configuration name="pytest for test_ckcs.TestPoetGame.test_start" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_ckcs_TestPoetGame_test_cycle - 2020.03.28 at 12h 55m 54s.xml">
-      <configuration name="pytest for test_ckcs.TestPoetGame.test_cycle" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_ckcs_TestPoetGame_test_cycle - 2020.03.28 at 13h 02m 07s.xml">
-      <configuration name="pytest for test_ckcs.TestPoetGame.test_cycle" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_ckcs_TestPoetGame_test_cycle - 2020.03.28 at 13h 05m 18s.xml">
-      <configuration name="pytest for test_ckcs.TestPoetGame.test_cycle" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_ckcs_TestPoetGame_test_cycle - 2020.03.28 at 13h 07m 45s.xml">
-      <configuration name="pytest for test_ckcs.TestPoetGame.test_cycle" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_ckcs_TestPoetGame_test_cycle - 2020.03.28 at 13h 09m 56s.xml">
-      <configuration name="pytest for test_ckcs.TestPoetGame.test_cycle" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_ckcs_TestPoetGame_test_cycle - 2020.03.28 at 13h 10m 28s.xml">
-      <configuration name="pytest for test_ckcs.TestPoetGame.test_cycle" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_ckcs_TestPoetGame_test_cycle - 2020.03.28 at 13h 11m 14s.xml">
-      <configuration name="pytest for test_ckcs.TestPoetGame.test_cycle" configurationId="tests" />
-    </history-entry>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="10" y="9" width="1346" height="688" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981017" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44385964" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.23859648" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.24385965" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
       <list>
@@ -516,144 +368,34 @@
     <MESSAGE value="0" />
     <option name="LAST_COMMIT_MESSAGE" value="0" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/testtwo.py" />
-    <entry file="file://$PROJECT_DIR$/test2.py" />
-    <entry file="file://$PROJECT_DIR$/test1.py" />
-    <entry file="file://$PROJECT_DIR$/eee.py" />
-    <entry file="file://E:/weixin/pycharm/Lib/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="277" selection-start-line="277" selection-end-line="277" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poet/poet.song.0.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="10792" column="1" lean-forward="true" selection-start-line="10792" selection-start-column="1" selection-end-line="10792" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poet/common_poet.json" />
-    <entry file="file://$PROJECT_DIR$/poet/poet.song.1000.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poet/ee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poet/tangshisanbaishou.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="e#6095#16973#0" />
-            <element signature="e#16979#37417#0" />
-            <element signature="e#37423#52148#0" />
-            <element signature="e#52154#62780#0" />
-            <element signature="e#62786#76318#0" />
-            <element signature="e#76324#90995#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hh.py" />
-    <entry file="file://$PROJECT_DIR$/scdh1.py" />
-    <entry file="file://$PROJECT_DIR$/ee.py" />
-    <entry file="file://$PROJECT_DIR$/time_limit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-          <folding>
-            <element signature="e#63#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/langconv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="221" selection-start-line="221" selection-end-line="221" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poet/poet.tang.56000.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#22#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poet/tssbs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64638">
-          <caret line="3402" column="26" lean-forward="true" selection-start-line="3401" selection-start-column="12" selection-end-line="3402" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poet/question.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="3" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzcs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1801">
-          <caret line="127" column="35" lean-forward="true" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
-          <folding>
-            <element signature="e#54#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_PoetGame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_ckcs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-            <element signature="e#96#107#0" />
-            <element signature="e#396#678#0" />
-            <element signature="e#1458#1566#0" />
-            <element signature="e#497#1248#0" />
-            <element signature="e#308#319#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckcs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding>
-            <element signature="e#54#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="505" y="21" key="#gui" timestamp="1585480576370">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="505" y="21" key="#gui/0.0.1536.824@0.0.1536.824" timestamp="1585480576370" />
+    <state x="505" y="24" key="#pytest_in_test_ckcs.py" timestamp="1585480253586">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="505" y="24" key="#pytest_in_test_ckcs.py/0.0.1536.824@0.0.1536.824" timestamp="1585480253586" />
+    <state width="1500" height="197" key="GridCell.Tab.0.bottom" timestamp="1585481857790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585481857790" />
+    <state width="1500" height="197" key="GridCell.Tab.0.center" timestamp="1585481857790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585481857790" />
+    <state width="1500" height="197" key="GridCell.Tab.0.left" timestamp="1585481857790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585481857790" />
+    <state width="1500" height="197" key="GridCell.Tab.0.right" timestamp="1585481857790">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585481857790" />
+    <state x="478" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1585480198707">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="232" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585480198707" />
   </component>
 </project>
