@@ -88,3 +88,13 @@ class TestPoetGame(TestCase):
                 mock.call('12、回答错误/未回答。'),
                 mock.call('您的总得分为：8.3分')
             ])
+
+    def test_verification(self):
+        '''verification的测试函数'''
+        address = './poet/tssbs.json'
+        with open(address, 'r', encoding='utf-8') as load_f:
+            self.poet_game.all_poet = json.load(load_f)
+        number = 0
+        self.poet_game.questions.append('行宫')
+        answer = "寥落古行宫，宫花寂寞红。"
+        self.assertEqual(True, self.poet_game.verification(number, answer))
