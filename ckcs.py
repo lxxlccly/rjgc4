@@ -60,6 +60,19 @@ class PoetGame(object):
                 answer_unfinished = 0
         return 1
 
+    def verification(self, number, answer):
+        re_answer = re.findall(r'[\u4E00-\u9FA5]+', answer)
+        for i in range(len(self.all_poet)):
+            for j in range(len(self.all_poet[i]['paragraphs'])):
+                if self.all_poet[i]['chapter'].find(self.questions[number]) != -1 \
+                        or self.all_poet[i]['paragraphs'][j].find(self.questions[number]) != -1:
+                    sentence = re.findall(r'[\u4E00-\u9FA5]+', self.all_poet[i]['paragraphs'][j])
+                    if re_answer == sentence:
+                        self.answers[number] = answer
+                        self.unanswered[number] = 0
+                        return True
+        return False
+
     def get_question(self):
         '''获得题目'''
         all_question = []
